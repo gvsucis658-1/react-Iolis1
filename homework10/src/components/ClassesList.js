@@ -34,13 +34,16 @@ const handleClassChange = (event) => {
 
 return (
     <div>
+        <div className="bg-gray-800 opacity-90 text-white p-2 rounded-lg shadow-lg max-w-xl mx-auto my-5">
         <h1 className="font-bold text-2xl underline text-red-500">Welcome to the Threshold of Adventure</h1>
-        <p className="text-m font-bold">
+        <p className="text-m">
             Greetings, traveler! You stand at the gateway to realms untold, where legends are born from whispers, and fates are forged in the fires of daring. Here, within these hallowed digital halls, lies the path to valor and mystery—where dragons soar through cloud-wreathed skies, dungeons await with treasures guarded by ancient curses, and characters of great courage and cunning emerge to etch their names upon the annals of history.
             Whether you're a seasoned adventurer well-versed in the art of the dice or a curious newcomer eager to learn the secrets of this storied craft, you've found your sanctuary. Within these pages, you'll discover a compendium of knowledge, a gathering of fellow souls, and the tools to bring your imaginings to life.
             Your journey begins with a choice: who will you become in this vast world of fantasy and peril? A stalwart paladin, a wily rogue, or perhaps a sorcerer with arcane secrets at your fingertips? The path is yours to choose, and countless adventures await.
             So, ready your gear, summon your courage, and step forth into the adventure of a lifetime. The stories yet unwritten beckon, and the dice await your command. Welcome, hero, to your destiny.
         </p>
+        </div>
+        
         <ul>
             <Dropdown options={classes} onChange={handleClassChange} />
         </ul>
